@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
+
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.navbar .btnLogin-popup {
+  position: relative;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 19px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.navbar .btnLogin-popup::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  opacity: 0.85;
+}
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  right: -450px;
+  /* right: 0 !important; */
+  width: 450px;
+  height: 100%;
+  background: rgba(9, 163, 185, 0.5);
+  backdrop-filter: blur(15px);
+  box-shadow: -1px 0 10px rgba(0, 0, 0, 0.2);
+  border-left: 2px solid rgba(255, 255, 255, 0.1);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  transition: right 0.5s ease-in-out, opacity 0.3s ease-in-out;
+
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.wrapper.show {
+  right: 0;
+  opacity: 1;
+  pointer-events: auto;
+  transition: right 0.5s ease-in-out, opacity 0.3s ease-in-out;
+}
+.wrapper.hide {
+  right: -100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: right 0.5s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.wrapper.active-popup {
+  right: 0;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.icon-close {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background: #fff;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  border-bottom-left-radius: 10px;
+}
+
+.icon-close i {
+  font-size: 32px;
+  color: #222;
+}
+
+.wrapper .logreg-box {
+  width: 100%;
+}
+
+.wrapper .form-box.login {
+  display: block;
+}
+
+.wrapper.active .form-box.login {
+  display: none;
+}
+
+.wrapper .form-box.register {
+  display: none;
+}
+
+.wrapper.active .form-box.register {
+  display: block;
+}
+
+.logreg-box .logreg-title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.logreg-title h2 {
+  font-size: 32px;
+}
+
+.logreg-title p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.logreg-box .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+  border-bottom: 2px solid #fff;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  padding-right: 25px;
+}
+
+.input-box label {
+  position: absolute;
+  left: 0;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -5px;
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 19px;
+  color: #fff;
+}
+
+.logreg-box .remember-forgot {
+  font-size: 14.5px;
+  color: #fff;
+  font-weight: 500;
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember-forgot label input {
+  accent-color: #fff;
+  margin-right: 3px;
+}
+
+.remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.logreg-box .btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-size: 16px;
+  color: #222;
+  font-weight: 600;
+}
+
+.logreg-box .logreg-link {
+  font-size: 14.5px;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+  margin: 25px 0 15px;
+}
+
+.logreg-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.logreg-link p a:hover {
+  text-decoration: underline;
+}
+
+.media-options {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.media-options a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  width: 100%;
+  height: 50px;
+  border: 2px solid #fff;
+  margin: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 40px;
+  transition: 0.5s;
+}
+
+.media-options a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.media-options a i {
+  font-size: 22px;
+  margin: 0 8px 1.5px 0;
+}
+
+.media-options a span {
+  font-size: 16px;
+  font-weight: 500;
+}

@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="css/login2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <script src="javascript/login.js"></script>
+    
+    <!-- Added cache-busting query to force browser to get new JS file -->
+    <script src="javascript/login.js?v=1.1"></script>
 
     <style>
         .alert {
@@ -87,7 +89,8 @@
                 </div>
 
                 <!-- register -->
-                <div class="form-box register" style="display: none;">
+                <!-- The inline style="display: none;" has been REMOVED from this div -->
+                <div class="form-box register">
                     <div class="logreg-title">
                         <h2>Registration</h2>
                         <p>Please provide following to verify your identity</p>

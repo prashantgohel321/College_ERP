@@ -1,23 +1,27 @@
 document.addEventListener("DOMContentLoaded", function () {
     const registerLink = document.querySelector(".register-link");
     const loginLink = document.querySelector(".login-link");
-    const loginForm = document.querySelector(".form-box.login");
-    const registerForm = document.querySelector(".form-box.register");
     const wrapper = document.querySelector(".wrapper");
 
-    registerForm.style.display = "none";
+    // Check if all elements were found
+    if (registerLink && loginLink && wrapper) {
+        
+        // When register link is clicked, just add the 'active' class
+        registerLink.addEventListener("click", function (event) {
+            event.preventDefault();
+            wrapper.classList.add("active");
+        });
 
-    registerLink.addEventListener("click", function (event) {a
-        event.preventDefault();
-        wrapper.classList.add("active");
-        loginForm.style.display = "none";
-        registerForm.style.display = "block";
-    });
+        // When login link is clicked, just remove the 'active' class
+        loginLink.addEventListener("click", function (event) {
+            event.preventDefault();
+            wrapper.classList.remove("active");
+        });
 
-    loginLink.addEventListener("click", function (event) {
-        event.preventDefault();
-        wrapper.classList.remove("active");
-        registerForm.style.display = "none";
-        loginForm.style.display = "block";
-    });
+    } else {
+        // Log an error to the console if elements are missing
+        if (!registerLink) console.error("Login script could not find '.register-link'");
+        if (!loginLink) console.error("Login script could not find '.login-link'");
+        if (!wrapper) console.error("Login script could not find '.wrapper'");
+    }
 });

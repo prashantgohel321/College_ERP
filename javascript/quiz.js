@@ -1,329 +1,200 @@
-const questions = [
-    {
-        
-        question: "The full form of CSS is:?",
-        optionA: "CSS is a style sheet language",
-        optionB: "CSS is styel sheet language",
-        optionC: "CSS is Cascading Style Sheets",
-        optionD: "All of the mentioned",
-        correctOption: "option"
-    },
-
-    {
-        question: "Which of the following tag is used to embed css in html page? ?",
-        optionA: "css",
-        optionB: "!DOCTYPE html",
-        optionC: "script",
-        optionD: "style",
-        correctOption: "optionD"
-    },
-
-    {
-        question: "Which of the following CSS selectors are used to specify a group of elements??",
-        optionA: "tag",
-        optionB: "id",
-        optionC: "class",
-        optionD: "both class and tag",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "Which of the following has introduced text, list, box, margin, border, color, and background properties?",
-        optionA: "HTML",
-        optionB: "PHP",
-        optionC: "CSS",
-        optionD: "Ajax",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "Which of the following CSS framework is used to create a responsive design?",
-        optionA: "django",
-        optionB: "rails",
-        optionC: "larawell",
-        optionD: "bootstrap",
-        correctOption: "optionD"
-    },
-
-    {
-        question: "Which of the following CSS style property is used to specify an italic text?",
-        optionA: "style",
-        optionB: " font",
-        optionC: "font-style",
-        optionD: " @font-face",
-        correctOption: "optionC"
-    },
-
-    {
-        question: " Which of the following are the CSS Extension Prefixes for Webkit?",
-        optionA: "-chrome",
-        optionB: "-web",
-        optionC: "-o-",
-        optionD: "-webkit",
-        correctOption: "optionD"
-    },
-
-    {
-        question: "Which of the following function defines a linear gradient as a CSS image?",
-        optionA: "gradient()",
-        optionB: "linear-gradient()",
-        optionC: "grayscale()",
-        optionD: "image()",
-        correctOption: "optionB"
-    },
-
-    {
-        question: "Which of the following CSS property is used to set the color of the text?",
-        optionA: "text-decoration",
-        optionB: "pallet",
-        optionC: "colour",
-        optionD: "color",
-        correctOption: "optionD"
-    },
-
-    {
-        question:"Which of the following property is used to align the text in a table?",
-        optionA: "text-align",
-        optionB: " align",
-        optionC: "text",
-        optionD: "non of the mentioned",
-        correctOption: "optionA"
-    },
-
-    {
-        question: "Which of the following CSS property defines the space between cells in a table?",
-        optionA: " border-spacing",
-        optionB: "border-style",
-        optionC: "border",
-        optionD: "none of the mentioned",
-        correctOption: "optionA"
-    },
-
-    {
-        question: "Which of the following CSS property is used to specify table borders in CSS?",
-        optionA: "table:border",
-        optionB: "table",
-        optionC: "border",
-        optionD: "none of the mentioned",
-        correctOption: "optionC"
-    },
-
-
-    {
-        question: "The CSS property used to make the text bold is -",
-        optionA: "weight: bold",
-        optionB: "font-weight : bold",
-        optionC: "font: bold",
-        optionD: "style: bold",
-        correctOption: "optionB"
-    },
-
-    {
-        question: "Are the negative values allowed in padding property?",
-        optionA: "Yes",
-        optionB: "No",
-        optionC: "Can't say",
-        optionD: "May be",
-        correctOption: "optionB"
-    },
-
-    {
-        question: "The CSS property used to specify the transparency of an element is -",
-        optionA: "opacity",
-        optionB: "filter",
-        optionC: "visibility",
-        optionD: "overlay",
-        correctOption: "optionA"
-    },
-
-    {
-        question: "How to select the elements with the class name example?",
-        optionA: "example",
-        optionB: "#example",
-        optionC: ".example",
-        optionD: "Class example",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "Which of the following CSS property is used to add shadows to the text??",
-        optionA: "text-shadow",
-        optionB: "text-stroke",
-        optionC: "text-overflow",
-        optionD: "text-decoration",
-        correctOption: "optionA"
-    },
-
-    {
-        question: "Which of the following is not a value of the font-variant property in CSS?",
-        optionA: "normal",
-        optionB: "small-caps",
-        optionC: "large-caps",
-        optionD: "inherit",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "Which of the following is not a type of combinator?",
-        optionA: ">",
-        optionB: "~",
-        optionC: "+",
-        optionD: "*",
-        correctOption: "optionD"
-    },
-
-    {
-        question: " Which property is used to define the background color??",
-        optionA: "bgcolor",
-        optionB: "bg-color ",
-        optionC: "background",
-        optionD: "background-color",
-        correctOption: "optionD"
-    },
-
-    {
-        question: "To make a text italic, which CSS property is used??",
-        optionA: "font",
-        optionB: "font-family",
-        optionC: "font-style",
-        optionD: "All of the above",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "Which CSS property and value is used to center an element??",
-        optionA: "text-align:center",
-        optionB: "align:center",
-        optionC: "text-align:middle",
-        optionD: "align:middle",
-        correctOption: "optionA"
-    },
-
-    {
-        question: " HTML elements are positioned ___ by default.?",
-        optionA: "static",
-        optionB: "fixed",
-        optionC: "relative",
-        optionD: "none",
-        correctOption: "optionA"
-    },
-
-    {
-        question: "Which CSS property specifies the opacity/transparency of an element? ?",
-        optionA: "transparency",
-        optionB: "opacity",
-        optionC: "transform-opacity",
-        optionD: "opacity-all",
-        correctOption: "optionB"
-    },
-
-    {
-        question: "Which CSS function uses the largest value??",
-        optionA: "large()",
-        optionB: "maximum()",
-        optionC: "max_value()",
-        optionD: "max()",
-        correctOption: "optionD"
-    }
-
-]
-
-
-let shuffledQuestions = [] //empty array to hold shuffled selected questions out of all available questions
-
-function handleQuestions() { 
-    //function to shuffle and push 10 questions to shuffledQuestions array
-    //app would be dealing with 10questions per session
-    while (shuffledQuestions.length <= 9) {
-        const random = questions[Math.floor(Math.random() * questions.length)]
-        if (!shuffledQuestions.includes(random)) {
-            shuffledQuestions.push(random)
-        }
-    }
-}
-
-
+// Global variables
+let shuffledQuestions = [] // Will hold the 10 questions from the API
 let questionNumber = 1 //holds the current question number
 let playerScore = 0  //holds the player score
 let wrongAttempt = 0 //amount of wrong answers picked by player
 let indexNumber = 0 //will be used in displaying next question
 
-//function for displaying next question in the array to dom
-//also handles displaying players and quiz information to dom
+/**
+ * Decodes HTML entities from a string.
+ * e.g., "Don&#039;t" becomes "Don't"
+ * @param {string} text The text to decode.
+ * @returns {string} The decoded text.
+ */
+function decodeHTMLEntities(text) {
+    if (typeof text !== 'string') {
+        console.warn("decodeHTMLEntities received non-string input:", text);
+        return text || ""; // Return empty string for null/undefined
+    }
+    try {
+        var textArea = document.createElement('textarea');
+        textArea.innerHTML = text;
+        return textArea.value;
+    } catch (e) {
+        console.error("Error decoding entities:", e);
+        return text; // Return original text on error
+    }
+}
+
+/**
+ * Fetches questions from the OpenTDB API, formats them, and stores them in shuffledQuestions.
+ * @returns {boolean} Returns true if questions were loaded successfully, false otherwise.
+ */
+async function fetchQuestions() {
+    const API_URL = 'https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple';
+    let questionsLoaded = false;
+    try {
+        const response = await fetch(API_URL);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        
+        if (data.results && data.results.length > 0) {
+            shuffledQuestions = data.results.map((apiQuestion) => {
+                const incorrectAnswers = apiQuestion.incorrect_answers;
+                const correctAnswer = apiQuestion.correct_answer;
+                
+                // Combine and shuffle answers
+                const allAnswers = [...incorrectAnswers, correctAnswer];
+                // Simple shuffle
+                const shuffledAnswers = allAnswers.sort(() => Math.random() - 0.5);
+
+                // Find which option (A, B, C, D) is the correct one
+                const correctOptionIndex = shuffledAnswers.findIndex(answer => answer === correctAnswer);
+                // Handle case where findIndex might fail (though it shouldn't)
+                const correctOptionKey = ['optionA', 'optionB', 'optionC', 'optionD'][correctOptionIndex] || 'optionA';
+
+                // Return the formatted question object
+                return {
+                    question: decodeHTMLEntities(apiQuestion.question),
+                    optionA: decodeHTMLEntities(shuffledAnswers[0]),
+                    optionB: decodeHTMLEntities(shuffledAnswers[1]),
+                    optionC: decodeHTMLEntities(shuffledAnswers[2]),
+                    optionD: decodeHTMLEntities(shuffledAnswers[3]),
+                    correctOption: correctOptionKey
+                };
+            });
+            questionsLoaded = true;
+        } else {
+            throw new Error("API returned no questions.");
+        }
+    } catch (error) {
+        console.error("Error fetching quiz questions:", error);
+        // Display error to the user
+        document.getElementById("display-question").innerHTML = "Failed to load questions. Please try refreshing the page.";
+    }
+    return questionsLoaded;
+}
+
+/**
+ * Entry point for the quiz. Fetches questions then displays the first one.
+ */
+async function startQuiz() {
+    // Show loading state
+    document.getElementById("display-question").innerHTML = "Loading Quiz...";
+    document.getElementById("question-number").innerHTML = "1"; // Show 1 even while loading
+    // Disable next button while loading
+    document.querySelector(".next-button-container button").disabled = true;
+
+    // Fetch and format questions
+    const questionsLoaded = await fetchQuestions();
+
+    // Check if questions were loaded
+    if (questionsLoaded && shuffledQuestions.length > 0) {
+        // Hide loading and display the first question
+        NextQuestion(indexNumber);
+        // Re-enable next button
+        document.querySelector(".next-button-container button").disabled = false;
+    } else {
+        // Show error if fetching failed
+        document.getElementById("display-question").innerHTML = "Error: Could not load quiz. Please check the console and try again.";
+        // Keep button disabled
+    }
+}
+
+
+/**
+ * Displays the next question and options.
+ * @param {number} index The index of the question in shuffledQuestions.
+ */
 function NextQuestion(index) {
-    handleQuestions()
-    const currentQuestion = shuffledQuestions[index]
-    document.getElementById("question-number").innerHTML = questionNumber
-       document.getElementById("display-question").innerHTML = currentQuestion.question;
+    const currentQuestion = shuffledQuestions[index];
+    
+    if (!currentQuestion) {
+        console.error("No question found at index:", index);
+        // This might happen if API returns < 10 questions and game logic expects 10
+        handleEndGame(); // End game if questions run out
+        return;
+    }
+
+    document.getElementById("question-number").innerHTML = questionNumber;
+    document.getElementById("display-question").innerHTML = currentQuestion.question;
     document.getElementById("option-one-label").innerHTML = currentQuestion.optionA;
     document.getElementById("option-two-label").innerHTML = currentQuestion.optionB;
     document.getElementById("option-three-label").innerHTML = currentQuestion.optionC;
     document.getElementById("option-four-label").innerHTML = currentQuestion.optionD;
-
 }
 
-
+/**
+ * Checks the selected answer against the correct answer.
+ * @returns {boolean} Returns true if an option was selected, false otherwise.
+ */
 function checkForAnswer() {
-    const currentQuestion = shuffledQuestions[indexNumber] //gets current Question 
-    const currentQuestionAnswer = currentQuestion.correctOption //gets current Question's answer
-    const options = document.getElementsByName("option"); //gets all elements in dom with name of 'option' (in this the radio inputs)
-    let correctOption = null
+    const currentQuestion = shuffledQuestions[indexNumber]; 
+    if (!currentQuestion) return false; // Guard clause
 
-    options.forEach((option) => {
-        if (option.value === currentQuestionAnswer) {
-            //get's correct's radio input with correct answer
-            correctOption = option.labels[0].id
+    const currentQuestionAnswer = currentQuestion.correctOption; 
+    const options = document.getElementsByName("option");
+    
+    let selectedOption = null;
+    for (const option of options) {
+        if (option.checked) {
+            selectedOption = option;
+            break;
         }
-    })
-
-    //checking to make sure a radio input has been checked or an option being chosen
-    if (options[0].checked === false && options[1].checked === false && options[2].checked === false && options[3].checked == false) {
-        document.getElementById('option-modal').style.display = "flex"
     }
 
-    //checking if checked radio button is same as answer
-    options.forEach((option) => {
-        if (option.checked === true && option.value === currentQuestionAnswer) {
-            playerScore++ //adding to player's score
-            indexNumber++ //adding 1 to index so has to display next question..
-            //set to delay question number till when next question loads
-            setTimeout(() => {
-                questionNumber++
-            }, 1000)
-        }
+    // 1. Check if an option was selected
+    if (!selectedOption) {
+        document.getElementById('option-modal').style.display = "flex";
+        return false; // Stop execution, don't proceed to next question
+    }
 
-        else if (option.checked && option.value !== currentQuestionAnswer) {
-            const wrongLabelId = option.labels[0].id
-            wrongAttempt++ //adds 1 to wrong attempts 
-            indexNumber++
-            //set to delay question number till when next question loads
-            setTimeout(() => {
-                questionNumber++
-            }, 1000)
-        }
-    })
-}
+    // 2. An option was selected, so check if it's correct
+    if (selectedOption.value === currentQuestionAnswer) {
+        playerScore++;
+    } else {
+        wrongAttempt++;
+    }
 
-//called when the next button is called
-function handleNextQuestion() {
-    checkForAnswer() //check if player picked right or wrong option
-    unCheckRadioButtons()
-    //delays next question displaying for a second just for some effects so questions don't rush in on player
+    // 3. Increment index
+    indexNumber++;
+    
+    // 4. Set timeout to increment visual question number (as in original)
     setTimeout(() => {
-        if (indexNumber <= 9) {
-//displays next question as long as index number isn't greater than 9, remember index number starts from 0, so index 9 is question 10
-            NextQuestion(indexNumber)
+        // Only update if not past the last question
+        if (indexNumber < 10) {
+            questionNumber++;
         }
-        else {
-            handleEndGame()//ends game if index number greater than 9 meaning we're already at the 10th question
-        }
-        resetOptionBackground()
-    }, 1000);
+    }, 1000); 
+
+    return true; // Proceed to next question
 }
 
 
+/**
+ * Called when the 'Next' button is clicked.
+ */
+function handleNextQuestion() {
+    const proceed = checkForAnswer(); //check if player picked right or wrong option
+    
+    if (proceed) { // Only proceed if an answer was selected
+        unCheckRadioButtons();
+        //delays next question displaying for a second
+        setTimeout(() => {
+            if (indexNumber < 10) { // Use < 10 because indexNumber is 0-based
+                NextQuestion(indexNumber);
+            }
+            else {
+                handleEndGame(); //ends game if index number is 10
+            }
+        }, 1000);
+    }
+}
 
-// unchecking all radio buttons for next question(can be done with map or foreach loop also)
+
+// unchecking all radio buttons for next question
 function unCheckRadioButtons() {
     const options = document.getElementsByName("option");
     for (let i = 0; i < options.length; i++) {
@@ -333,46 +204,54 @@ function unCheckRadioButtons() {
 
 // function for when all questions being answered
 function handleEndGame() {
-    let remark = null
-    let remarkColor = null
+    let remark = null;
+    let remarkColor = null;
 
     // condition check for player remark and remark color
     if (playerScore <= 3) {
-        remark = "Bad Grades, Keep Practicing."
-        //remarkColor = "red"
+        remark = "Bad Grades, Keep Practicing.";
+        remarkColor = "red";
     }
     else if (playerScore >= 4 && playerScore < 7) {
-        remark = "Average Grades, You can do better."
-        //remarkColor = "orange"
+        remark = "Average Grades, You can do better.";
+        remarkColor = "orange";
     }
     else if (playerScore >= 7) {
-        remark = "Excellent, Keep the good work going."
-        //remarkColor = "green"
+        remark = "Excellent, Keep the good work going.";
+        remarkColor = "green";
     }
-    const playerGrade = (playerScore / 10) * 100
+    const playerGrade = (playerScore / 10) * 100;
 
     //data to display to score board
-    document.getElementById('remarks').innerHTML = remark
-    document.getElementById('remarks').style.color = remarkColor
-    document.getElementById('grade-percentage').innerHTML = playerGrade
-    document.getElementById('wrong-answers').innerHTML = wrongAttempt
-    document.getElementById('right-answers').innerHTML = playerScore
-    document.getElementById('score-modal').style.display = "flex"
+    document.getElementById('remarks').innerHTML = remark;
+    document.getElementById('remarks').style.color = remarkColor;
+    document.getElementById('grade-percentage').innerHTML = playerGrade;
+    document.getElementById('wrong-answers').innerHTML = wrongAttempt;
+    document.getElementById('right-answers').innerHTML = playerScore;
+    document.getElementById('score-modal').style.display = "flex";
 
 }
 
 //closes score modal, resets game and reshuffles questions
 function closeScoreModal() {
-    questionNumber = 1
-    playerScore = 0
-    wrongAttempt = 0
-    indexNumber = 0
-    shuffledQuestions = []
-    NextQuestion(indexNumber)
-    document.getElementById('score-modal').style.display = "none"
+    // Reset all game state variables
+    questionNumber = 1;
+    playerScore = 0;
+    wrongAttempt = 0;
+    indexNumber = 0;
+    shuffledQuestions = []; // Clear old questions
+    
+    // Hide the modal
+    document.getElementById('score-modal').style.display = "none";
+    
+    // Uncheck any lingering radio buttons
+    unCheckRadioButtons(); 
+
+    // Fetch new questions and restart the quiz
+    startQuiz(); 
 }
 
 //function to close warning modal
 function closeOptionModal() {
-    document.getElementById('option-modal').style.display = "none"
+    document.getElementById('option-modal').style.display = "none";
 }

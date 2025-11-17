@@ -7,18 +7,17 @@
     <title>Marwadi College</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script src="javascript/js.js="></script>
+    <!-- Removed typo: javascript/js.js= -->
     <link rel="stylesheet" type="text/css" href="css/quiz.css">
     <script src="javascript/quiz.js"></script>
 </head>
 
-<body>
+<!-- Changed onload to call startQuiz() and combined body tags -->
+<body onload="startQuiz()">
     <?php include 'header.php' ?>
     <br>
     <br>
-</body>
-
-<body onload="NextQuestion(0)">
+    
     <main>
         <div class="modal-container" id="score-modal">
 
@@ -49,7 +48,8 @@
             </div>
 
             <div class="game-question-container">
-                <h1 id="display-question"></h1>
+                <!-- Added initial loading message -->
+                <h1 id="display-question">Loading Quiz...</h1>
             </div>
 
             <div class="game-options-container">
@@ -99,7 +99,6 @@
 
         </div>
     </main>
-    <script src="index.js"></script>
     <?php include 'footer.php' ?>
 </body>
 

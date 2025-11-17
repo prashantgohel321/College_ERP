@@ -25,7 +25,7 @@
 
     body {
       font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
+      background-color: #f5f5ff;
       margin: 0;
       padding: 0;
     }
@@ -88,7 +88,7 @@
     .team-members {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: center; /* This will center the single member */
       gap: 20px;
     }
 
@@ -152,11 +152,6 @@
       margin: auto;
     }
 
-    /* iframe {
-      width: 100%;
-      height: 350px;
-      border-radius: 8px;
-    } */
   </style>
 </head>
 
@@ -180,7 +175,7 @@
 
     <!-- Team Members -->
     <div class="team">
-      <h2>Meet Our Team</h2>
+      <h2>Meet the Developer</h2>
       <div class="team-members">
         <div class="member">
           <img src="images/TM_01.jpg" alt="Prashant Gohel">
@@ -190,21 +185,9 @@
           <p><i class="fas fa-phone"></i> +91 8160447162</p>
         </div>
 
-        <div class="member">
-          <img src="images/TM_02.jpg" alt="Tanvir Mulla">
-          <h3>Tanvir Mulla</h3>
-          <p><i class="fas fa-envelope"></i> <a href="mailto:tanvir.mulla116660@marwadiuniversity.ac.in">tanvir.mulla116660@marwadiuniversity.ac.in</a></p>
-          <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/tanvir-mulla-198309251" target="_blank">Tanvir Mulla</a></p>
-          <p><i class="fas fa-phone"></i> +91 8765432109</p>
-        </div>
-
-        <div class="member">
-          <img src="images/TM_03.jpg" alt="Aryan Sarvaiya">
-          <h3>Aryan Sarvaiya</h3>
-          <p><i class="fas fa-envelope"></i> <a href="mailto:aryan.sarvaiya118844@marwadiuniversity.ac.in">aryan.sarvaiya118844@marwadiuniversity.ac.in</a></p>
-          <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/aryan-sarvaiya-a4a5b4335" target="_blank">Aryan Sarvaiya</a></p>
-          <p><i class="fas fa-phone"></i> +91 7654321098</p>
-        </div>
+        <!-- Removed Tanvir Mulla's section -->
+        
+        <!-- Removed Aryan Sarvaiya's section -->
       </div>
     </div>
     <div class="map-container">

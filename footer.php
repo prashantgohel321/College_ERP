@@ -11,7 +11,7 @@
 <body>
     <footer class="mainFooter">
         <p>&copy 2025 Marwadi University. All Rights Reserved.</p>
-        <p>Developed by Prashant Gohil, Tanvir Mulla and Aryan Sarvaiya</p>
+        <p>Developed by Prashant Gohil</p>
         <center>
             <a href="https://www.facebook.com/Marwadiuniversity/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://www.linkedin.com/school/marwadiuniversity/posts/?feedView=all" target="_blank"><i class="fa-brands fa-linkedin"></i></a>

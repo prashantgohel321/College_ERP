@@ -9,7 +9,7 @@
 <body>
 <footer class="mainFooter">
         <p>&copy 2025 Marwadi University. All Rights Reserved.</p>
-        <p>Developed by Prashant Gohil, Tanvir Mulla and Aryan Sarvaiya</p>
+        <p>Developed by Prashant Gohil.</p>
         <center>
             <a href="https://www.facebook.com/Marwadiuniversity/"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://twitter.com/MU_Rajkot"><i class="fa-brands fa-linkedin"></i></a>

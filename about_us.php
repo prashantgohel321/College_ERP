@@ -21,9 +21,10 @@
             color: #333;
         }
 
+        /* Removed fixed height to allow container to grow */
         div.container {
             width: 1000px !important;
-            height: 800px !important;
+            margin: 20px auto; /* Added auto margin for centering */
         }
 
         .container {
@@ -43,8 +44,8 @@
         p {
             font-size: 1.1rem;
             line-height: 1.6;
-            text-align: justify;
-            margin-top: 10px;
+            text-align: justify; /* Changed to justify for a cleaner look */
+            margin-top: 20px; /* Added more space between paragraphs */
         }
 
         .team-section {
@@ -94,35 +95,19 @@
     <?php include 'header.php' ?>
 
     <div class="container">
-        <h1>About Us</h1>
+        <h1>About Marwadi University</h1>
         <p>
-            Welcome to our project! We are a team of passionate developers committed to building innovative
-            solutions that make an impact. Our current project focuses on enhancing digital learning experiences
-            and providing users with a seamless, interactive platform. With expertise in web development,
-            cloud computing, and UI/UX design, we aim to create a product that is both user-friendly and highly
-            functional.
+            Marwadi University (MU), located in Rajkot, Gujarat, is a premier private institution established in 2016 under the Gujarat Private Universities Act. It is a key part of the Marwadi Education Foundation's Group of Institutions (MEFGI). The university is recognized by the UGC, approved by AICTE, and has set a high standard for academic excellence in the region.
         </p>
 
         <p>
-            Our mission is to bridge the gap between technology and education, ensuring that students and professionals
-            alike have access to high-quality resources. We are continuously working on improvements, integrating the
-            latest technologies to enhance the platform's performance and usability.
+            Notably, Marwadi University is the first private university in Gujarat to be accredited with a prestigious NAAC A+ Grade. This distinction highlights its commitment to providing high-quality education, innovative teaching methodologies, and robust research infrastructure. The university's mission is to foster social transformation and create future leaders through innovation, entrepreneurship, and strategic industrial partnerships.
+        </p>
+         <p>
+            The sprawling campus features state-of-the-art facilities, including modern laboratories, advanced research centers, a comprehensive digital library, and extensive sports complexes. Marwadi University offers a diverse array of undergraduate, postgraduate, and doctoral programs across various disciplines such as Engineering, Management, Law, Science, and Computer Applications, preparing students to meet global standards.
         </p>
 
-        <div class="team-section">
-            <h2 class="team-title">Meet Our Team</h2>
-            <div class="team-container">
-                <div class="team-member">
-                    <h3>Prashant Gohil</h3>
-                </div>
-                <div class="team-member">
-                    <h3>Tanvir Mulla</h3>
-                </div>
-                <div class="team-member">
-                    <h3>Aryan Sarvaiya</h3>
-                </div>
-            </div>
-        </div>
+        <!-- Removed the team section as requested -->
     </div>
     <?php include 'footer.php' ?>
 
